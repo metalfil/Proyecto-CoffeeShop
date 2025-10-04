@@ -20,7 +20,14 @@ except Exception as e:
     exit()
 
 # --- 2. Preparar el Bucle y la Exportación ---
-carpeta_csv = 'C:\projects\coffeeshop\csv\menu_items' 
+# C:\projects\coffeeshop\csv\menu_items
+# C:\projects\coffeeshop\csv\payment_methods
+# C:\projects\coffeeshop\csv\stores
+# C:\projects\coffeeshop\csv\\transaction_items
+# C:\projects\coffeeshop\csv\\transactions
+# C:\projects\coffeeshop\csv\\users
+# C:\projects\coffeeshop\csv\\vouchers
+carpeta_csv = 'C:\projects\coffeeshop\csv\\vouchers'
 archivos_csv = [f for f in os.listdir(carpeta_csv) if f.endswith('.csv')]
 
 for nombre_archivo in archivos_csv:
